@@ -46,6 +46,7 @@ public class CalculatorController {
         Button button = (Button) event.getSource();
         String selectedOperator = button.getText();
         firstNumber = Double.parseDouble(display.getText());
+        display.appendText(selectedOperator);
         operator = selectedOperator;
         startNewNumber = true;
     }

@@ -16,3 +16,10 @@
     -fx-text-fill: white;
     -fx-background-radius: 8;
 }
+
+.operator-button {
+    -fx-font-size: 20px;
+    -fx-background-color: #ff9500;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
