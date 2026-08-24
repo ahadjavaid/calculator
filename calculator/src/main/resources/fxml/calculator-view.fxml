@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" styleClass="calculator" stylesheets="@../css/calculator.css" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/17.0.12" fx:controller="com.calculator.controller.CalculatorController">
+
+    <TextField fx:id="display" alignment="CENTER_RIGHT" prefHeight="60" prefWidth="300" text="0" styleClass="display" />
+
+    <GridPane hgap="10" vgap="10">
+
+        <Button onAction="#handleNumber" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="7" GridPane.columnIndex="0" GridPane.rowIndex="0" />
+        <Button onAction="#handleNumber" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="8" GridPane.columnIndex="1" GridPane.rowIndex="0" />
+        <Button onAction="#handleNumber" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="9" GridPane.columnIndex="2" GridPane.rowIndex="0" />
+        <Button onAction="#handleOperator" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="/" GridPane.columnIndex="3" GridPane.rowIndex="0" />
+
+        <Button onAction="#handleNumber" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="4" GridPane.columnIndex="0" GridPane.rowIndex="1" />
+        <Button onAction="#handleNumber" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="5" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <Button onAction="#handleNumber" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="6" GridPane.columnIndex="2" GridPane.rowIndex="1" />
+        <Button onAction="#handleOperator" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="*" GridPane.columnIndex="3" GridPane.rowIndex="1" />
+
+        <Button onAction="#handleNumber" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="1" GridPane.columnIndex="0" GridPane.rowIndex="2" />
+        <Button onAction="#handleNumber" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="2" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+        <Button onAction="#handleNumber" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="3" GridPane.columnIndex="2" GridPane.rowIndex="2" />
+        <Button onAction="#handleOperator" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="-" GridPane.columnIndex="3" GridPane.rowIndex="2" />
+
+        <Button onAction="#handleNumber" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="0" GridPane.columnIndex="0" GridPane.rowIndex="3" />
+        <Button onAction="#handleDecimal" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="." GridPane.columnIndex="1" GridPane.rowIndex="3" />
+        <Button onAction="#handleClear" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="C" GridPane.columnIndex="2" GridPane.rowIndex="3" />
+        <Button onAction="#handleOperator" styleClass="calculator-button" prefHeight="60" prefWidth="70" text="+" GridPane.columnIndex="3" GridPane.rowIndex="3" />
+
+
+
+        <columnConstraints>
+            <ColumnConstraints prefWidth="70"/>
+            <ColumnConstraints prefWidth="70"/>
+            <ColumnConstraints prefWidth="70"/>
+            <ColumnConstraints prefWidth="70"/>
+        </columnConstraints>
+
+        <rowConstraints>
+            <RowConstraints prefHeight="60"/>
+            <RowConstraints prefHeight="60"/>
+            <RowConstraints prefHeight="60"/>
+            <RowConstraints prefHeight="60"/>
+
+        </rowConstraints>
+
+    </GridPane>
+
+    <Button text="="
+            styleClass="calculator-button"
+            prefWidth="310"
+            prefHeight="60"
+            onAction="#handleEquals"/>
+</VBox>

@@ -1,0 +1,18 @@
+.calculator{
+    -fx-padding: 20;
+    -fx-background-color: #202124;
+}
+
+.display{
+    -fx-font-size: 28px;
+    -fx-background-color: #303134;
+    -fx-text-fill: white;
+    -fx-border-color: #5f6368;
+}
+
+.calculator-button {
+    -fx-font-size: 20px;
+    -fx-background-color: #3c4043;
+    -fx-text-fill: white;
+    -fx-background-radius: 8;
+}
