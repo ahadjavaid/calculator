@@ -18,11 +18,13 @@ public class CalculatorController {
     private boolean startNewNumber = true;
     private boolean calculationFinished = false;
     private double firstNumber;
+    private double secondNumber;
     private String operator;
 
     public CalculatorController(CalculatorService calculatorService) {
         this.calculatorService = calculatorService;
     }
+
 
     @FXML
     public void handleNumber(ActionEvent event) {
@@ -50,7 +52,7 @@ public class CalculatorController {
         operator = selectedOperator;
         startNewNumber = true;
     }
- 
+
     @FXML
     public void handleEquals(ActionEvent event) {
 
@@ -93,3 +95,23 @@ public class CalculatorController {
 }
 
 
+
+//@FXML
+//public void handleNumber(ActionEvent event) {
+//
+//    Button button = (Button) event.getSource();
+//
+//    String number = button.getText();
+//
+//    if(startNewNumber || calculationFinished) {
+//        if((firstNumber != 0) && (operator != null)) {
+//            display.appendText(number);
+//        } else {
+//            display.setText(number);
+//        }
+//        startNewNumber = false;
+//        calculationFinished = false;
+//    } else {
+//        display.appendText(number);
+//    }
+//}
